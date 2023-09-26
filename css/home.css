@@ -1,0 +1,24 @@
+
+.dev-profession::after{
+    content: ' A Developer';
+    animation: changeText 5s infinite linear;
+}
+
+@keyframes changeText{
+    20%{
+        content: ' A Designer';
+    }
+    50%{
+        content: ' A Developer';
+    }
+    /* 100%{
+        content: 'A ';
+    } */
+}
+
+@media screen and (max-width:768px){
+    .masterhead-buttons a{
+        margin: 4px 0 ;
+    }
+}
+
