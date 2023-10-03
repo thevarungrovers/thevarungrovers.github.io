@@ -1,4 +1,6 @@
-
+*{
+    scroll-behavior: smooth;
+}
 .dev-profession::after{
     content: ' A Developer';
     animation: changeText 5s infinite linear;
