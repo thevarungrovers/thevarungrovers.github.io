@@ -93,6 +93,10 @@
   .timeline .timeline-body > p {
     margin-bottom: 0;
   }
+
+  .experience-company-name a, .education-institution-name a, .certificate-issuer-name a{
+    color: inherit;
+  }
   
   @media (min-width: 768px) {
     .timeline:before {
