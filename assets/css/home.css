@@ -1,26 +1,58 @@
 *{
     scroll-behavior: smooth;
 }
-.dev-profession::after{
-    content: ' A Developer';
-    animation: changeText 5s infinite linear;
+
+/* Typewriter effect */
+@keyframes typing {
+	0.0000%, 50% { content: ""; }
+	1.1395%, 48.8605% { content: "d"; }
+	2.2791%, 47.721% { content: "de"; }
+	3.4186%, 46.5815% { content: "dev"; }
+	4.5581%, 45.442% { content: "deve"; }
+	5.6977%, 44.3025% { content: "devel"; }
+	6.8372%, 43.163% { content: "develo"; }
+	7.9767%, 42.0235% { content: "develop"; }
+	9.1163%, 40.884% { content: "develope"; }
+	10.2558%, 39.7445% { content: "developer"; }
+
+	54.6977%, 96.8605% { content: ""; }
+	55.8372%, 95.721% { content: "d"; }
+	56.9767%, 94.5815% { content: "de"; }
+	58.1163%, 93.442% { content: "des"; }
+	59.2558%, 92.3025% { content: "desi"; }
+	60.3953%, 91.163% { content: "desig"; }
+	61.5349%, 90.0235% { content: "design"; }
+	62.6745%, 88.884% { content: "designe"; }
+	63.8141%, 87.7445% { content: "designer"; }
+}
+  
+@keyframes blink {
+	0%, 100% { opacity: 1; }
+	50% { opacity: 0; }
 }
 
-@keyframes changeText{
-    20%{
-        content: ' A Designer';
-    }
-    50%{
-        content: ' A Developer';
-    }
-    /* 100%{
-        content: 'A ';
-    } */
+.typewriter::before {
+	content: "";
+	animation: typing 13.5s infinite;
 }
-
-@media screen and (max-width:768px){
-    .masterhead-buttons a{
-        margin: 4px 0 ;
-    }
+  
+.typewriter::after {
+	content: "";
+	animation: blink 0.5s linear infinite;
 }
+  
+@media (prefers-reduced-motion) {
+	.typewriter::after {
+		animation: none;
+	}
 
+	@keyframes sequencePopup {
+		0%, 100% { content: "developer"; }
+		50% { content: "designer"; }
+	}
+
+	.typewriter::before {
+		content: "developer";
+		animation: sequencePopup 12s linear infinite;
+	}
+}
