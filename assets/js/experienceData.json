@@ -1,0 +1,30 @@
+[
+    {
+      "position": "Team Lead",
+      "company_name": "Les Fermes Lufa",
+      "company_website": "https://montreal.lufa.com/en#/",
+      "company_location": "Montreal, QC (CA)",
+      "job_type": "Full-time",
+      "job_duration": "Nov 2022 - PRESENT",
+      "image_address": "assets/img/experience/lufa.jpg"
+    },
+    {
+      "position": "Web Developer",
+      "company_name": "Consultation SOS",
+      "company_website": "https://consultationsos.com/",
+      "company_location": "Montreal, QC (CA)",
+      "job_type": "Internship",
+      "job_duration": "Nov 2023 - Dec 2023",
+      "image_address": "assets/img/no-image.png"
+    },
+    {
+      "position": "WH Team Member",
+      "company_name": "Les Fermes Lufa",
+      "company_website": "https://montreal.lufa.com/en#/",
+      "company_location": "Montreal, QC (CA)",
+      "job_type": "Part-time",
+      "job_duration": "Feb 2022 - Oct 2022",
+      "image_address": "assets/img/experience/lufa.jpg"
+    }
+  ]
+  
