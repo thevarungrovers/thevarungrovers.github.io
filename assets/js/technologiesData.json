@@ -1,0 +1,55 @@
+[
+    {
+      "name": "My SQL",
+      "image_address": "assets/img/technology/my_sql.png"
+    },
+    {
+      "name": "PHP",
+      "image_address": "assets/img/technology/php.png"
+    },
+    {
+      "name": "Bootstrap",
+      "image_address": "assets/img/technology/bootstrap.png"
+    },
+    {
+      "name": "Git",
+      "image_address": "assets/img/technology/git.png"
+    },
+    {
+      "name": "React JS",
+      "image_address": "assets/img/technology/react_js.png"
+    },
+    {
+      "name": "Android",
+      "image_address": "assets/img/technology/android.png"
+    },
+    {
+      "name": "C",
+      "image_address": "assets/img/technology/c.png"
+    },
+    {
+      "name": "Adobe XD",
+      "image_address": "assets/img/technology/adobe_xd.png"
+    },
+    {
+      "name": "Figma",
+      "image_address": "assets/img/technology/figma.png"
+    },
+    {
+      "name": "ASP.NET",
+      "image_address": "assets/img/technology/asp_net.png"
+    },
+    {
+      "name": "C#",
+      "image_address": "assets/img/technology/c-sharp.png"
+    },
+    {
+      "name": "Java",
+      "image_address": "assets/img/technology/java.png"
+    },
+    {
+      "name": "SQL Server",
+      "image_address": "assets/img/technology/sql-server.png"
+    }
+  ]
+  

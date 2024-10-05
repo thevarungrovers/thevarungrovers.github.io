@@ -1,0 +1,17 @@
+[
+    {
+      "course_name": "C Programming Course",
+      "certificate_issuer": "My Captain",
+      "issuer_website": "https://mycaptain.in/",
+      "completion_date": "Sep 2020",
+      "image_address": "assets/img/certifications/mycaptain.jpg"
+    },
+    {
+      "course_name": "Web Development Course",
+      "certificate_issuer": "My Captain",
+      "issuer_website": "https://mycaptain.in/",
+      "completion_date": "Aug 2020",
+      "image_address": "assets/img/certifications/mycaptain.jpg"
+    }
+  ]
+  

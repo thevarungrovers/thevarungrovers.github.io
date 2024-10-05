@@ -1,0 +1,24 @@
+[
+    {
+      "name": "Calculator",
+      "description": "This calculator application developed in C# using Windows Forms with .NET Framework. The application provides three main functionalities: a Simple Calculator, a Scientific Calculator, and a Currency Converter (in offline mode) using data from a text file.",
+      "image_address": "assets/img/works/calculator.gif",
+      "project_link": "https://github.com/thevarungrovers/Calculator",
+      "aos_delay": 100
+    },
+    {
+      "name": "Books Inventory Management System",
+      "description": "A user-friendly application developed to manage the books inventory using C programming language.",
+      "image_address": "assets/img/works/Books-Inventory.gif",
+      "project_link": "https://github.com/thevarungrovers/Books-Inventory",
+      "aos_delay": 200
+    },
+    {
+      "name": "Harry Potter: World of Magic",
+      "description": "This is a React JS web app that uses PotterDB API for Potions, Books, and Movies, and HP-API for Character info.",
+      "image_address": "assets/img/works/harry-potter.gif",
+      "project_link": "https://github.com/thevarungrovers/Harry-Potter",
+      "aos_delay": 300
+    }
+  ]
+  
