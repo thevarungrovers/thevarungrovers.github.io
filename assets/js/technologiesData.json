@@ -12,6 +12,10 @@
       "image_address": "assets/img/technology/bootstrap.png"
     },
     {
+      "name": "Javascript",
+      "image_address": "assets/img/technology/javascript.png"
+    },
+    {
       "name": "Git",
       "image_address": "assets/img/technology/git.png"
     },
@@ -24,8 +28,8 @@
       "image_address": "assets/img/technology/android.png"
     },
     {
-      "name": "C",
-      "image_address": "assets/img/technology/c.png"
+      "name": "Python",
+      "image_address": "assets/img/technology/python.png"
     },
     {
       "name": "Adobe XD",
@@ -34,14 +38,6 @@
     {
       "name": "Figma",
       "image_address": "assets/img/technology/figma.png"
-    },
-    {
-      "name": "ASP.NET",
-      "image_address": "assets/img/technology/asp_net.png"
-    },
-    {
-      "name": "C#",
-      "image_address": "assets/img/technology/c-sharp.png"
     },
     {
       "name": "Java",
