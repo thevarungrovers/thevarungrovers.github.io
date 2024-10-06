@@ -6,6 +6,14 @@
       "location": "Montreal, QC (CA)",
       "duration": "Jan 2022 - Dec 2023",
       "image_address": "assets/img/education/lasalle.png"
+    },
+    {
+      "course_name": "Senior Secondar School",
+      "institution_name": "Jawahar Navodaya Vidyalaya",
+      "institution_website": "",
+      "location": "Ferozepur, Punjab (IN)",
+      "duration": "Apr 2018 - Mar 2019",
+      "image_address": "assets/img/education/jnv.jpeg"
     }
   ]
   
