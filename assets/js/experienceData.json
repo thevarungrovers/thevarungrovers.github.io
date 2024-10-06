@@ -1,11 +1,20 @@
 [
     {
+      "position": "Supervisor",
+      "company_name": "Les Fermes Lufa",
+      "company_website": "https://montreal.lufa.com/en#/",
+      "company_location": "Montreal, QC (CA)",
+      "job_type": "Full-time",
+      "job_duration": "Oct 2024 - PRESENT",
+      "image_address": "assets/img/experience/lufa.jpg"
+    },
+    {
       "position": "Team Lead",
       "company_name": "Les Fermes Lufa",
       "company_website": "https://montreal.lufa.com/en#/",
       "company_location": "Montreal, QC (CA)",
       "job_type": "Full-time",
-      "job_duration": "Nov 2022 - PRESENT",
+      "job_duration": "Nov 2022 - Oct 2024",
       "image_address": "assets/img/experience/lufa.jpg"
     },
     {
