@@ -1,6 +1,5 @@
 [
     {
-<<<<<<< HEAD
       "position": "Supervisor",
       "company_name": "Lufa Farms",
       "company_website": "https://montreal.lufa.com/en#/",
@@ -18,16 +17,6 @@
       "job_duration": "Nov 2022 - Nov 2024",
       "image_address": "assets/img/experience/lufa.png"
     },
-=======
-      "position": "Team Lead",
-      "company_name": "Les Fermes Lufa",
-      "company_website": "https://montreal.lufa.com/en#/",
-      "company_location": "Montreal, QC (CA)",
-      "job_type": "Full-time",
-      "job_duration": "Nov 2022 - PRESENT",
-      "image_address": "assets/img/experience/lufa.jpg"
->>>>>>> 83bd34d477ffbc794400936d8aca8d44d5f0e91f
-    },
     {
       "position": "Web Developer",
       "company_name": "Consultation SOS",
@@ -39,20 +28,12 @@
     },
     {
       "position": "WH Team Member",
-<<<<<<< HEAD
       "company_name": "Lufa Farms",
-=======
-      "company_name": "Les Fermes Lufa",
->>>>>>> 83bd34d477ffbc794400936d8aca8d44d5f0e91f
       "company_website": "https://montreal.lufa.com/en#/",
       "company_location": "Montreal, QC (CA)",
       "job_type": "Part-time",
       "job_duration": "Feb 2022 - Oct 2022",
-<<<<<<< HEAD
       "image_address": "assets/img/experience/lufa.png"
-=======
-      "image_address": "assets/img/experience/lufa.jpg"
->>>>>>> 83bd34d477ffbc794400936d8aca8d44d5f0e91f
     }
   ]
   
