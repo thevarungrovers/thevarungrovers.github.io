@@ -1,11 +1,20 @@
 [
     {
+      "position": "Manager",
+      "company_name": "Lufa Farms",
+      "company_website": "https://montreal.lufa.com/en#/",
+      "company_location": "Montreal, QC (CA)",
+      "job_type": "Full-time",
+      "job_duration": "Mar 2025 - PRESENT",
+      "image_address": "assets/img/experience/lufa.png"
+    },
+    {
       "position": "Supervisor",
       "company_name": "Lufa Farms",
       "company_website": "https://montreal.lufa.com/en#/",
       "company_location": "Montreal, QC (CA)",
       "job_type": "Full-time",
-      "job_duration": "Nov 2024 - PRESENT",
+      "job_duration": "Nov 2024 - Mar 2025",
       "image_address": "assets/img/experience/lufa.png"
     },
     {
