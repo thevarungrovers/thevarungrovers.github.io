@@ -1,14 +1,52 @@
 // Favicon
 // Get the preferred color scheme from the system or browser
-const preferredColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+const preferredColorScheme = window.matchMedia("(prefers-color-scheme: dark)")
+  .matches
+  ? "dark"
+  : "light";
 
-const favicon = document.getElementById('favicon');
+const favicon = document.getElementById("favicon");
 
 // Set the image source based on the preferred color scheme
-if (preferredColorScheme === 'dark') {
-    favicon.href = 'assets/img/logos/vg-dark-mode.svg';
+if (preferredColorScheme === "dark") {
+  favicon.href = "assets/img/logos/vg-dark-mode.svg";
 } else {
-    favicon.href = 'assets/img/logos/vg-light-mode.svg';
+  favicon.href = "assets/img/logos/vg-light-mode.svg";
+}
+
+// ---------------------------------------------------------------------------
+// Theme toggle (light / dark)
+// ---------------------------------------------------------------------------
+
+const themeToggleBtn = document.getElementById("theme-toggle");
+
+// Determine the initial theme based on localStorage or system preference
+const currentTheme = localStorage.getItem("theme") || preferredColorScheme;
+
+applyTheme(currentTheme);
+
+// Attach listener to toggle button (if present)
+if (themeToggleBtn) {
+  themeToggleBtn.addEventListener("click", () => {
+    const isDark = document.body.classList.toggle("dark-mode");
+    const updatedTheme = isDark ? "dark" : "light";
+    localStorage.setItem("theme", updatedTheme);
+    applyTheme(updatedTheme);
+  });
+}
+
+function applyTheme(theme) {
+  if (theme === "dark") {
+    document.body.classList.add("dark-mode");
+    favicon.href = "assets/img/logos/vg-dark-mode.svg";
+    if (themeToggleBtn)
+      themeToggleBtn.innerHTML = '<i class="bi bi-sun-fill"></i>';
+  } else {
+    document.body.classList.remove("dark-mode");
+    favicon.href = "assets/img/logos/vg-light-mode.svg";
+    if (themeToggleBtn)
+      themeToggleBtn.innerHTML = '<i class="bi bi-moon-fill"></i>';
+  }
 }
 
 // Footer
@@ -16,16 +54,17 @@ document.getElementById(`current-year`).innerHTML = new Date().getFullYear();
 
 // Experience section
 // Fetch the JSON data
-fetch('./assets/js/experienceData.json')
-  .then(response => response.json())
-  .then(data => {
-    const timelineContainer = document.querySelector('#experience .timeline');
-    
-    const timelineItems = data.map((experience, index) => {
-      // Add the 'timeline-inverted' class to odd elements
-      const invertedClass = (index % 2 === 0) ? 'timeline-inverted' : '';
-      
-      return `
+fetch("./assets/js/experienceData.json")
+  .then((response) => response.json())
+  .then((data) => {
+    const timelineContainer = document.querySelector("#experience .timeline");
+
+    const timelineItems = data
+      .map((experience, index) => {
+        // Add the 'timeline-inverted' class to odd elements
+        const invertedClass = index % 2 === 0 ? "timeline-inverted" : "";
+
+        return `
         <li class="${invertedClass}">
           <div class="timeline-image">
             <img class="rounded-circle img-fluid img-responsive" src="${experience.image_address}" alt="${experience.company_name}" />
@@ -44,26 +83,29 @@ fetch('./assets/js/experienceData.json')
           </div>
         </li>
       `;
-    }).join('');
+      })
+      .join("");
 
     // Insert the generated timeline items into the timeline container
     timelineContainer.innerHTML = timelineItems;
   })
-  .catch(error => console.error('Error fetching the data:', error));
-
+  .catch((error) => console.error("Error fetching the data:", error));
 
 // Certifications sections
 // Fetch the JSON data
-fetch('./assets/js/certificationsData.json')
-  .then(response => response.json())
-  .then(data => {
-    const timelineContainer = document.querySelector('#certifications .timeline');
+fetch("./assets/js/certificationsData.json")
+  .then((response) => response.json())
+  .then((data) => {
+    const timelineContainer = document.querySelector(
+      "#certifications .timeline"
+    );
 
-    const timelineItems = data.map((certification, index) => {
-      // Add the 'timeline-inverted' class to odd elements
-      const invertedClass = (index % 2 === 0) ? 'timeline-inverted' : '';
+    const timelineItems = data
+      .map((certification, index) => {
+        // Add the 'timeline-inverted' class to odd elements
+        const invertedClass = index % 2 === 0 ? "timeline-inverted" : "";
 
-      return `
+        return `
         <li class="${invertedClass}">
           <div class="timeline-image">
             <img class="rounded-circle img-fluid img-responsive" src="${certification.image_address}" alt="${certification.certificate_issuer}" />
@@ -83,25 +125,27 @@ fetch('./assets/js/certificationsData.json')
           </div>
         </li>
       `;
-    }).join('');
+      })
+      .join("");
 
     // Insert the generated timeline items into the timeline container
     timelineContainer.innerHTML = timelineItems;
   })
-  .catch(error => console.error('Error fetching the data:', error));
+  .catch((error) => console.error("Error fetching the data:", error));
 
 // education section
 // Fetch the JSON data
-fetch('./assets/js/educationData.json')
-  .then(response => response.json())
-  .then(data => {
-    const timelineContainer = document.querySelector('#education .timeline');
+fetch("./assets/js/educationData.json")
+  .then((response) => response.json())
+  .then((data) => {
+    const timelineContainer = document.querySelector("#education .timeline");
 
-    const timelineItems = data.map((education, index) => {
-      // Add the 'timeline-inverted' class to odd elements
-      const invertedClass = (index % 2 === 0) ? 'timeline-inverted' : '';
+    const timelineItems = data
+      .map((education, index) => {
+        // Add the 'timeline-inverted' class to odd elements
+        const invertedClass = index % 2 === 0 ? "timeline-inverted" : "";
 
-      return `
+        return `
         <li class="${invertedClass}">
           <div class="timeline-image">
             <img class="rounded-circle img-fluid" src="${education.image_address}" alt="${education.institution_name}" />
@@ -119,26 +163,27 @@ fetch('./assets/js/educationData.json')
           </div>
         </li>
       `;
-    }).join('');
+      })
+      .join("");
 
     // Insert the generated timeline items into the timeline container
     timelineContainer.innerHTML = timelineItems;
   })
-  .catch(error => console.error('Error fetching the data:', error));
-
+  .catch((error) => console.error("Error fetching the data:", error));
 
 // works section
 // Fetch the JSON data
-fetch('./assets/js/worksData.json')
-  .then(response => response.json())
-  .then(data => {
-    const worksContainer = document.querySelector('#works .row');
+fetch("./assets/js/worksData.json")
+  .then((response) => response.json())
+  .then((data) => {
+    const worksContainer = document.querySelector("#works .row");
 
-    const worksItems = data.map((work, index) => {
-      // Calculate the aos_delay based on the index (e.g., 100ms per item)
-      const aosDelay = (index + 1) * 100;
+    const worksItems = data
+      .map((work, index) => {
+        // Calculate the aos_delay based on the index (e.g., 100ms per item)
+        const aosDelay = (index + 1) * 100;
 
-      return `
+        return `
         <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="${aosDelay}">
           <div class="icon-box">
             <div class="icon works-image-container">
@@ -155,29 +200,34 @@ fetch('./assets/js/worksData.json')
           </div>
         </div>
       `;
-    }).join('');
+      })
+      .join("");
 
     // Insert the generated works items into the works container
     worksContainer.innerHTML += worksItems; // Use += to append items to existing HTML
   })
-  .catch(error => console.error('Error fetching the data:', error));
+  .catch((error) => console.error("Error fetching the data:", error));
 
 // techlogies section
 // Fetch the JSON data
-fetch('./assets/js/technologiesData.json')
-  .then(response => response.json())
-  .then(data => {
-    const technologiesContainer = document.querySelector('#technologies-used .row');
+fetch("./assets/js/technologiesData.json")
+  .then((response) => response.json())
+  .then((data) => {
+    const technologiesContainer = document.querySelector(
+      "#technologies-used .row"
+    );
 
-    const technologyItems = data.map(tech => {
-      return `
+    const technologyItems = data
+      .map((tech) => {
+        return `
         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
           <img src="${tech.image_address}" class="img-fluid img-responsive tech" alt="${tech.name}">
         </div>
       `;
-    }).join('');
+      })
+      .join("");
 
     // Insert the generated technology items into the technologies container
     technologiesContainer.innerHTML += technologyItems; // Use += to append items to existing HTML
   })
-  .catch(error => console.error('Error fetching the data:', error));
+  .catch((error) => console.error("Error fetching the data:", error));
